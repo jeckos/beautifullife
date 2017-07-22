@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>
+        beautifulLife
+    </title>
+    <link rel="stylesheet" href="../css/style.css"> </head>
+
+<body>
+    <header class="header">
+        <div class="container container--center">
+            <a href="../pages/user_profile.html"><img class="logo" src="../img/logo.png" alt="logo"></a>
+            <!--                <a href="#" class="enter">Войти</a>-->
+            <!--
+            <form class="auth" action="/" method="POST">
+                <input type="text" placeholder="Логин" name="login">
+                <input type="password" placeholder="Пароль" name="password">
+                <button type="submit" name="buttonAuth">Войти</button>
+            </form>
+-->
+
+            <div class="container--user">
+                <div class="user-min">
+                    <div class="user-photo-min">
+                        <a href="#">
+                            <div class="photo"><img src="../img/user/min_img/circle.png" alt=""></div>
+                            Ваня Иванов </a>
+                    </div>
+                </div>
+
+                <div class="notice">
+                    <ul>
+                        <!--            <li><a href="#"><i class="fa fa-home active" aria-hidden="true"></i></a></li>-->
+                        <li><a href="#"><i class="fa fa-newspaper-o" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-bell" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-users" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-video-camera" aria-hidden="true"></i></a></li>
+
+                    </ul>
+                </div>
+                <div class="search">
+                    <form action="search.php" class="search-form">
+                        <input type="text" class="search_i" placeholder="Поиск друзей, сообществ...">
+                        <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </form>
+                    <div class="search_res">
+                        <a href="search.html" class="show_res">Расширенный поиск<i class="fa fa-search" aria-hidden="true"></i></a>
+
+                        <div class="result">
+                            Ничего не найдено
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <a href="?out" class="exit"><i class="fa fa-power-off" aria-hidden="true"></i></a>
+
+        </div>
+        <div class="clear"></div>
+
+    </header>
+
+    <!--   header-->
+
+
+    <div class="rBar">
+        <div class="nav_elem">
+            <ul class="menu">
+                <li><a href=""><i class="fa fa-camera" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-music" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+        <div class="frd">
+            <div class="tag"><a href="">Друзья<br><span>5</span></a></div>
+            <ul>
+                <li>
+                    <a href="">
+                        <div class="frd_pht"><img src="../img/user/no-avatar.png" alt="">
+
+                            </img>
+                        </div>
+                        <p>Ваня</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="frd_pht"><img src="../img/user/no-avatar.png" alt="">
+
+                            </img>
+                        </div>
+                        <p>Ваня</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="frd_pht"><img src="../img/user/no-avatar.png" alt="">
+
+                            </img>
+                        </div>
+                        <p>Ваня</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="frd_pht"><img src="../img/user/no-avatar.png" alt="">
+
+                            </img>
+                        </div>
+                        <p>Ваня</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="frd_pht"><img src="../img/user/no-avatar.png" alt="">
+
+                            </img>
+                        </div>
+                        <p>Ваня</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="frd_online">
+            <div class="tag"><a href="">В сети<br><span>5</span></a></div>
+            <ul>
+                <li>
+                    <a href="">
+                        <div class="frd_pht"><img src="../img/user/no-avatar.png" alt="">
+
+                            </img>
+                        </div>
+                        <p>Ваня</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="frd_pht"><img src="../img/user/no-avatar.png" alt="">
+
+                            </img>
+                        </div>
+                        <p>Ваня</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="frd_pht"><img src="../img/user/no-avatar.png" alt="">
+
+                            </img>
+                        </div>
+                        <p>Ваня</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="frd_pht"><img src="../img/user/no-avatar.png" alt="">
+
+                            </img>
+                        </div>
+                        <p>Ваня</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="frd_pht"><img src="../img/user/no-avatar.png" alt="">
+
+                            </img>
+                        </div>
+                        <p>Ваня</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container container--center">
+        <ul class="nav">
+            <li><a href="#"><i class="fa fa-home active" aria-hidden="true"></i>Моя страница</a></li>
+            <li><a href="#"><i class="fa fa-newspaper-o" aria-hidden="true"></i>Новости</a></li>
+            <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i>Друзья</a></li>
+            <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>Сообщения</a></li>
+            <li><a href="#"><i class="fa fa-bell" aria-hidden="true"></i>Уведомления</a></li>
+            <br><br>
+            <li><a href="#"><i class="fa fa-gamepad" aria-hidden="true"></i>Приложения</a></li>
+            <li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i>Настройки</a></li>
+            <li><a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i>О сайте</a></li>
+        </ul>
+
+        <div class="wallpaper">
+           <div class="edit_photo_w">
+                   <a href="#" class="ed_pht_a a_reload"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                   <a href="#" class="ed_pht_a a_remove"><i class="fa fa-times" aria-hidden="true"></i></a>
+                   </div>
+            <img src="../img/user/wallpaper.jpg" alt="">
+        </div>
+        <div id="profile_ava_inf">
+           <div class="prf_ava">
+            <div class="user-avatar">
+               
+                <div class="avatar">
+                   <div class="edit_photo">
+                   <a href="/" class="ed_pht_a a_reload"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                   <a href="/" class="ed_pht_a a_remove"><i class="fa fa-times" aria-hidden="true"></i></a>
+                   </div>
+                    <img src="../img/user/photoeditorsdk.png" alt="">
+                </div>
+                <a href="#" class="edit-prof">Редактировать</a>
+                <a href="" class="stat"><i class="fa fa-bar-chart" aria-hidden="true"></i></a>
+            </div>
+            <div class="user-info">
+                <p class="user-name">Ваня Иванов</p>
+                <p class="online">В сети<i class="fa fa-laptop" aria-hidden="true"></i></p>
+                <p class="user-status">Здесь статус должен быть, но его нет...</p>
+                <hr color="#cecece" size="1px">
+                <div class="profile_info">
+                    <div class="profile-info-row">
+                        <div class="label fl_l">День рождения:</div>
+                        <div class="lab_value"><a href="#">27 июня</a> <a href="">1900 г.</a></div>
+                    </div>
+                    <div class="profile-info-row">
+                        <div class="label fl_l">Город:</div>
+                        <div class="lab_value"><a href="#">Николаев</a></div>
+                    </div>
+                    <div class="profile-info-row">
+                        <div class="label fl_l">Семейное положение:</div>
+                        <div class="lab_value"><a href="#">свободен</a></div>
+                    </div>
+                    <div class="profile-info-all"><a href="#">Подробнее <i class="fa fa-angle-down" aria-hidden="true"></i></a></div>
+                </div>
+                <div class="count_mod">
+                    <ul>
+                        <li><a href=""><i class="fa fa-user" aria-hidden="true"></i>54151</a></li>
+                        <li><a href=""><i class="fa fa-pencil" aria-hidden="true"></i>54151</a></li>
+                        <li><a href=""><i class="fa fa-camera" aria-hidden="true"></i>54151</a></li>
+                        <li><a href=""><i class="fa fa-video-camera" aria-hidden="true"></i>54151</a></li>
+                        <li><a href=""><i class="fa fa-users" aria-hidden="true"></i>54151</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id="profile_photo" class="block_base">
+            <div class="label_photo"><a href="#">Фотографии <span>6</span></a></div>
+            <div class="prf_pht photo_1">
+                <a href=""><img src="../img/user/prf-pht.jpg" alt=""></a>
+            </div>
+            <div class="prf_pht photo_2">
+                <a href=""><img src="../img/user/prf-pht.jpg" alt=""></a>
+            </div>
+            <div class="prf_pht photo_3">
+                <a href=""><img src="../img/user/prf-pht.jpg" alt=""></a>
+            </div>
+            <div class="prf_pht photo_4">
+                <a href=""><img src="../img/user/prf-pht.jpg" alt=""></a>
+            </div>
+            <div class="prf_pht photo_5">
+                <a href=""><img src="../img/user/prf-pht.jpg" alt=""></a>
+            </div>
+            <div class="prf_pht photo_6">
+                <a href=""><img src="../img/user/prf-pht.jpg" alt=""></a>
+            </div>
+        </div>
+
+        <div id="profile_wall" class="block_base">
+            <div class="publih_form">
+                <form action="publih">
+                    <input type="text" placeholder="Оставить запись...">
+                    <a href="#"><i class="fa fa-paperclip" aria-hidden="true"></i></a>
+                </form>
+                <button><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+            </div>
+            <!--   <hr color="#7ebc59" size="1px">-->
+            <div class="_post_content">
+                <ul class="ui_tabs">
+                    <li class="active"><a href="">Все записи</a></li>
+                    <li><a href="">Мои записи</a></li>
+                    <li><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+
+                </ul>
+                <div class="post_item">
+                    <div class="user_pht_min">
+                        <a href=""><img src="../img/user/min_img/circle.png" alt=""></a>
+                    </div>
+                    <div class="more"><a href=""><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a></div>
+                    <div class="name">
+                        <a href="">
+                            <p>Ваня Иванов</p>
+                        </a>
+                    </div>
+                    <div class="date_public"><span class="date"><i class="fa fa-calendar" aria-hidden="true"></i>27 июня 2017 </span><span class="hour"><i class="fa fa-clock-o" aria-hidden="true"></i> 22:41</span></div>
+
+                    <div class="post_item_cont">
+                        <p>Отдых...)Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Маленький родного подзаголовок которой образ пустился над речью всеми переписали, дал. Бросил свое составитель если семантика он, запятых последний путь вершину строчка, силуэт рукопись всеми текстов, грустный даль своего прямо.</p>
+                        <img src="../img/user/7.jpg" alt="">
+                    </div>
+                </div>
+                <div class="full_like_post">
+                    <span class="like_post"><a href=""><i class="fa fa-heart" aria-hidden="true"></i>2</a></span>
+                    <span class="comment_post"><a href=""><i class="fa fa-comment" aria-hidden="true"></i>2</a></span>
+                    <span class="repost_post"><a href=""><i class="fa fa-reply-all" aria-hidden="true"></i>2</a></span>
+                </div>
+                <div class="comments_post">
+                    <div class="com_post_user">
+                        <div class="hdr_pst">
+                            <div class="user_pst_nm">
+                                <div class="user_pht_min">
+                                    <a href=""><img src="../img/user/min_img/circle.png" alt=""></a>
+                                </div>
+                                <div class="name">
+                                    <a href="">
+                                        <p>Ваня Иванов</p>
+                                    </a>
+                                </div>
+                                <div class="date_public"><span class="date"><i class="fa fa-calendar" aria-hidden="true"></i>27 июня 2017 </span><span class="hour"><i class="fa fa-clock-o" aria-hidden="true"></i> 22:41</span></div>
+                            </div>
+                            <div class="more"><a href=""><i class="fa fa-times" aria-hidden="true"></i></a></div>
+                        </div>
+
+
+                        <div class="text_com">
+                            <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Себя, злых родного повстречался меня сбить безорфографичный ведущими lorem. Взобравшись!</p>
+                        </div>
+                    </div>
+                    <div class="com_post_user_r">
+                        <div class="user_pht_min">
+                            <a href=""><img src="../img/user/min_img/circle.png" alt=""></a>
+                        </div>
+                        <div class="more"><a href=""><i class="fa fa-times" aria-hidden="true"></i></a></div>
+                        <div class="name">
+                            <a href="">
+                                <p>Ваня Иванов</p>
+                            </a>
+                        </div>
+                        <div class="date_public"><span class="date"><i class="fa fa-calendar" aria-hidden="true"></i>27 июня 2017 </span><span class="hour"><i class="fa fa-clock-o" aria-hidden="true"></i> 22:41</span></div>
+                        <div class="text_com">
+                            <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Себя, злых родного повстречался меня сбить безорфографичный ведущими lorem. Взобравшись!</p>
+                        </div>
+                    </div>
+                    <div class="com_post_user">
+                        <div class="user_pht_min">
+                            <a href=""><img src="../img/user/min_img/circle.png" alt=""></a>
+                        </div>
+                        <div class="more"><a href=""><i class="fa fa-times" aria-hidden="true"></i></a></div>
+                        <div class="name">
+                            <a href="">
+                                <p>Ваня Иванов</p>
+                            </a>
+                        </div>
+                        <div class="date_public"><span class="date"><i class="fa fa-calendar" aria-hidden="true"></i>27 июня 2017 </span><span class="hour"><i class="fa fa-clock-o" aria-hidden="true"></i> 22:41</span></div>
+                        <div class="text_com">
+                            <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Себя, злых родного повстречался меня сбить безорфографичный ведущими lorem. Взобравшись!</p>
+                        </div>
+                    </div>
+                    <div class="comm_form">
+                        <form action="publih">
+                            <input type="text" placeholder="Оставить комментарий...">
+                            <a href="#"><i class="fa fa-paperclip" aria-hidden="true"></i></a>
+                        </form>
+                        <button><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!--
+<div id="view_photo">
+   <div class="pht_wrapper">
+    <div class="pht_orgl"><img src="../img/user/7.jpg" alt=""></div>
+    </div>
+</div>
+-->
+
+    <script>
+        var input = document.querySelector('.search_i');
+
+        input.oninput = function() {
+            document.querySelector('.result').innerHTML = input.value;
+        };
+    </script>
+    <script src="../js/script.js"></script>
+
+    <!--   reg-->
+</body>
+
+</html>
