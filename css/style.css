@@ -131,6 +131,10 @@ header {
   max-width: 100%;
   padding: 10px;
   background-color: #33363b; }
+header a {
+    color: #fff;
+}
+
   header .logo {
     vertical-align: middle;
     width: 100px;
