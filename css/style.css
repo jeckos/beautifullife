@@ -395,7 +395,9 @@ header {
       font-size: 16px; }
 
 .wallpaper {
-  position: relative; }
+  width: 900px;
+  position: relative;
+  margin: 0 auto; }
   .wallpaper:hover .edit_photo_w {
     opacity: 1;
     display: block; }
@@ -441,8 +443,7 @@ header {
     border-radius: 5px;
     margin-bottom: 8px;
     position: relative;
-    transition: opacity 1s;
-    cursor: pointer; }
+    transition: opacity 1s; }
     .user-avatar .avatar:hover .edit_photo {
       opacity: 1;
       display: block; }
@@ -451,7 +452,8 @@ header {
       border-radius: 5px;
       min-height: 180px;
       object-fit: cover;
-      outline: 0px solid red; }
+      outline: 0px solid red;
+      cursor: pointer; }
   .user-avatar > a {
     font-family: 'BrutalLight', Arial, sans-serif;
     font-size: 12px;
@@ -481,7 +483,7 @@ header {
   height: 20px;
   background: rgba(0, 0, 0, 0.5);
   border-radius: 0 0 0 5px;
-  padding: 5px 3px 2px 5px; }
+  padding: 8px 0 3px 0; }
 
 .edit_photo_w {
   text-align: left;
@@ -489,21 +491,23 @@ header {
   opacity: 0;
   position: absolute;
   top: 0;
-  right: 30px;
+  right: 0px;
   height: 20px;
   background: rgba(0, 0, 0, 0.5);
-  border-radius: 0 0 0 5px;
-  padding: 5px 3px 2px 5px; }
+  border-radius: 0 0 0 5px; }
 
 .ed_pht_a {
-  padding: 0 5px 0 5px;
+  padding: 0px 10px;
   font-size: 12px;
   color: #fff;
-  text-decoration: none;
-  background-color: none;
-  border-right: 1px solid rgba(206, 206, 206, 0.3); }
+  float: left;
+  border-right: 1px solid #ddd9c9;
+  cursor: pointer; }
   .ed_pht_a:hover {
     color: #7ebc59; }
+
+.a_remove {
+  border-right: none; }
 
 .user-info {
   position: absolute;
@@ -511,8 +515,10 @@ header {
   text-align: left;
   float: right;
   right: 0;
-  top: -145px;
+  top: -147px;
   width: 645px;
+  height: auto;
+  z-index: 2;
   background-color: #fff;
   border-radius: 10px;
   -webkit-box-shadow: 0px 0px 5px 0.5px rgba(0, 0, 0, 0.15);
@@ -595,7 +601,7 @@ header {
 
 #profile_photo {
   height: 170px;
-  margin-top: 95px; }
+  margin-top: 70px; }
   #profile_photo .label_photo {
     text-align: left; }
     #profile_photo .label_photo a {
@@ -622,10 +628,10 @@ header {
     margin-left: 5px; }
 
 #profile_ava_inf {
-  position: absolute;
-  top: 275px;
   width: 870px;
-  margin-left: 45px; }
+  position: relative;
+  margin: 0 auto;
+  padding-top: 15px; }
   #profile_ava_inf .prf_ava {
     position: relative; }
 
@@ -986,30 +992,94 @@ header {
   clear: both;
   visibility: hidden; }
 
-.view_photo {
+.show {
+  display: block; }
+
+.hide {
+  display: none; }
+
+#view_photo {
+  z-index: 99;
+  overflow: auto;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(51, 51, 51, 0.8); }
-  .view_photo .pht_wrapper {
-    padding: 10px;
+  #view_photo .close {
+    color: #fff;
+    right: 0;
+    margin: 30px 45px 0 0;
+    position: fixed;
+    top: 0;
+    font-size: 25px;
+    cursor: pointer; }
+  #view_photo .pht_wrapper {
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin-bottom: 50px;
     position: relative;
+    top: 50px;
     left: 50%;
-    top: 50%;
     max-width: 900px;
-    height: 650px;
+    min-height: 500px;
     background-color: #333;
-    transform: translateY(-50%) translateX(-50%); }
-    .view_photo .pht_wrapper .pht_orgl {
+    transform: translateX(-50%); }
+    #view_photo .pht_wrapper .pht_orgl img {
+      width: 100%; }
+    #view_photo .pht_wrapper p {
+      padding-top: 15px; }
+
+#upload {
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(51, 51, 51, 0.8);
+  z-index: 99; }
+  #upload .up_wrapper {
+    border-radius: 7px 7px 5px 5px;
+    margin-bottom: 100px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    max-width: 500px;
+    min-height: 300px;
+    background-color: #fafafa;
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75); }
+    #upload .up_wrapper .pht_orgl .title {
+      font-family: BrutalBold;
+      position: relative;
       width: 100%;
-      height: 100%;
-      overflow: hidden; }
-      .view_photo .pht_wrapper .pht_orgl img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; }
+      background-color: #33363b;
+      border-radius: 5px 5px 0 0;
+      padding: 15px 0;
+      font-size: 18px;
+      text-align: left; }
+      #upload .up_wrapper .pht_orgl .title h2 {
+        padding-left: 15px;
+        color: #fff; }
+      #upload .up_wrapper .pht_orgl .title .close {
+        color: #fff;
+        position: absolute;
+        display: inline-block;
+        font-size: 20px;
+        cursor: pointer;
+        padding: 0;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%); }
+    #upload .up_wrapper .pht_orgl p {
+      color: #33363b;
+      line-height: 1.5;
+      padding-top: 15px;
+      padding: 30px 20px; }
 
 #srh_pnl {
   padding: 15px 0;
